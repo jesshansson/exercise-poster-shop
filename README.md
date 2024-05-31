@@ -1,4 +1,4 @@
-![poster](./poster.png)
+![poster](./sketch/poster.png)
 
 # Figma - Poster shop
 
@@ -12,6 +12,6 @@ You can find all images in the asset folder.
 
 ## Screens
 
-![screens](./screens.png)
+![screens](./sketch/screens.png)
 
-![screens2](./check-out.png)
+![screens2](./sketch/check-out.png)
