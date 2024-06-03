@@ -1,0 +1,78 @@
+header h1 {
+  font-size: 55px;
+  margin: 3rem 0;
+}
+
+.checkout-container h1 {
+  font-size: 40px;
+}
+
+main {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+main .checkout-container {
+  display: grid;
+}
+
+.checkout-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  
+} 
+
+main .profile-card {
+  margin: 1rem 0.5rem;
+  box-sizing: border-box;
+  border: 2px solid #333333;
+  margin: 0 auto; 
+  max-width: 80%;
+  color: black;
+  background-color: white;
+}
+
+.checkout-order  {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 3rem 0;
+  background-color: azure;
+  column-gap: 50px;
+  row-gap: 10px;
+}
+
+.checkout-order p {
+  background-color: hotpink;
+  margin: 10px;
+}
+
+.checkout-order > p:nth-child(11) {
+  grid-column: 3/ span 1;
+}
+
+.checkout-order > .header {
+  background-color: aqua;
+}
+
+.total {
+  border-top: 3px solid black;
+}
+
+@media (max-width: 900px) {
+  main .checkout-items {
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+  }
+}
+
+
+@media (max-width: 600px) {
+  
+  header h1 {
+    font-size: 50px;
+    width: 80%;
+    text-align: center;
+  }
+}
