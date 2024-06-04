@@ -15,15 +15,15 @@ body {
 header {
   width: auto;
   background-color: #3fe07f;
-  display: grid;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   color: black;
 }
 
 header h1 {
   font-size: 55px;
-  margin: 2rem 0 4rem 0;
+  margin: 3rem 0;
 }
 
 header .header-img {
@@ -35,7 +35,7 @@ header .header-img {
 header a, .navicon {
   width: 2rem;
   margin: 1rem;
-  justify-self: flex-start;
+  align-self: flex-start;
   cursor: pointer;
 }
 
@@ -67,18 +67,14 @@ main .profile-card {
   margin-bottom: 1rem;
 }
 
-
 footer {
   background-color: #333333;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
   padding: 2rem;
   margin-top: 3rem;
-  justify-items: center;
-}
-
-footer h1 {
-  font-size: 25px;
 }
 
 footer .nav p, img {
@@ -87,7 +83,6 @@ footer .nav p, img {
 
 .footer-column {
   max-width: 200px;
-  justify-content: center;
 }
 
 .so-me img {

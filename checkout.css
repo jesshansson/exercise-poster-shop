@@ -1,14 +1,9 @@
-header h1 {
-  font-size: 55px;
-  margin: 3rem 0;
-}
-
 .checkout-container h1 {
   font-size: 40px;
 }
 
 main {
-  max-width: 80%;
+  max-width: 70%;
   margin: 0 auto;
 }
 
@@ -35,16 +30,9 @@ main .profile-card {
 
 .checkout-order  {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 2fr 1fr;
   margin: 3rem 0;
-  background-color: azure;
-  column-gap: 50px;
-  row-gap: 10px;
-}
-
-.checkout-order p {
-  background-color: hotpink;
-  margin: 10px;
+  color: white;
 }
 
 .checkout-order > p:nth-child(11) {
@@ -52,24 +40,40 @@ main .profile-card {
 }
 
 .checkout-order > .header {
-  background-color: aqua;
+  background-color: #330809;
+  font-size: 18px;
 }
 
 .total {
-  border-top: 3px solid black;
+  border-top: 3px solid white;
+  font-weight: 600;
+  padding-top: 20px ;
+  font-size: 18px;
+  grid-column-start: span 2; 
+  margin: 0;
+}
+
+.checkout {
+  display: flex;
+  margin-left: auto;
 }
 
 @media (max-width: 900px) {
   main .checkout-items {
     grid-template-columns: 1fr;
     justify-items: center;
+  }
 
+  main .checkout-order {
+    row-gap: 5px;
+  }
+
+  .checkout-order p {
+    margin: .2rem 0;
   }
 }
 
-
 @media (max-width: 600px) {
-  
   header h1 {
     font-size: 50px;
     width: 80%;
