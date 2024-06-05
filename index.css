@@ -1,18 +1,23 @@
 main .profile-section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   max-width: 80%;
   margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.profile-name {
+  margin: 1rem 0;
 }
 
 .featured {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   max-width: 80%;
   margin: 0 auto; 
 }
 
-.featured .profile-card{
+.featured .profile-card {
   background-color: white;
   color: black;
   padding: 0;
@@ -20,12 +25,14 @@ main .profile-section {
 
 .featured .profile-img {
   width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 .featured-info {
   padding: 10px;
+}
+
+.buy-btn {
+  margin: 1rem 0;
 }
 
 @media (max-width: 900px) {
